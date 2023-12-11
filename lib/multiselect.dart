@@ -216,7 +216,7 @@ class _DropDownMultiSelectState<TState> extends State<DropDownMultiSelect<TState
                   child: Padding(
                     padding: const EdgeInsets.only(right: 20),
                     child: Text(
-                      widget.selectedValues.length > 0 ? widget.selectedValues.map((e) => e.toString()).reduce((a, b) => a.toString() + ' , ' + b.toString()) : widget.whenEmpty ?? '',
+                   widget.whenEmpty ?? '',
                       style: widget.selectedValuesStyle,
                     ),
                   ))),
